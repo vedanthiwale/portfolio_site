@@ -69,12 +69,23 @@ nav a{
 text-decoration:none;
 color:#cbd5f5;
 font-size:14px;
+position:relative;
 }
 
-nav a:hover{
-color:#60a5fa;
+nav a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-4px;
+width:0;
+height:2px;
+background:#60a5fa;
+transition:0.3s;
 }
 
+nav a:hover::after{
+width:100%;
+}
 /* HERO */
 
 .hero{
