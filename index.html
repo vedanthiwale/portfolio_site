@@ -107,12 +107,30 @@ width:100%;
 /* HERO */
 
 .hero{
-padding-top:120px;
+padding-top:140px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+flex-wrap:wrap;
 }
 
 .hero h1{
 font-size:48px;
 letter-spacing:-1px;
+}
+
+.hero-img{
+width:260px;
+height:260px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #60a5fa;
+box-shadow:0 10px 40px rgba(0,0,0,0.6);
+}
+
+.hero-text{
+max-width:600px;
 }
 
 .hero span{
@@ -247,16 +265,20 @@ transition:0.3s;
 
 <section class="hero">
 
+<div class="hero-text">
+
 <h1>AmardeepSingh <span>Chavan</span></h1>
 
 <p>
-Electrical engineering student interested in Power Systems,Electrical Machines and Renewable Energy. 
+Electrical engineering student interested in Power Systems, Electrical Machines and Renewable Energy. 
 I enjoy studying real-world engineering solutions involving control logic and energy systems.
 </p>
 
+</div>
+
+<img src="profile.jpg" class="hero-img">
 
 </section>
-
 
 
 <section id="about">
