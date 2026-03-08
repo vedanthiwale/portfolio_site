@@ -1,115 +1,345 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio_home</title>
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vedant Hiwale | Electrical Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:
+radial-gradient(circle at 20% 20%, rgba(96,165,250,0.08), transparent 40%),
+radial-gradient(circle at 80% 0%, rgba(139,92,246,0.06), transparent 40%),
+#020617;
+
+color:#e5e7eb;
+line-height:1.6;
+min-height:100vh;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+nav h2{
+font-weight:600;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#cbd5f5;
+font-size:14px;
+}
+
+nav a:hover{
+color:#60a5fa;
+}
+
+/* HERO */
+
+.hero{
+padding:80px 0;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero span{
+color:#60a5fa;
+}
+
+.hero p{
+max-width:600px;
+margin-bottom:25px;
+color:#9ca3af;
+}
+
+.btn{
+background:#60a5fa;
+padding:12px 24px;
+text-decoration:none;
+border-radius:6px;
+color:#020617;
+font-weight:600;
+}
+
+/* SECTION */
+
+section{
+padding:80px 0;
+}
+
+section h2{
+font-size:28px;
+margin-bottom:30px;
+color:#60a5fa;
+}
+
+/* ABOUT */
+
+.about{
+max-width:700px;
+color:#9ca3af;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#111827;
+padding:20px;
+border-radius:8px;
+text-align:center;
+font-size:14px;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.project{
+background:#111827;
+padding:25px;
+border-radius:8px;
+}
+
+.project h3{
+margin-bottom:10px;
+}
+
+.project p{
+font-size:14px;
+color:#9ca3af;
+margin-bottom:10px;
+}
+
+.project a{
+color:#60a5fa;
+text-decoration:none;
+font-size:14px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin-bottom:10px;
+color:#9ca3af;
+}
+
+/* FOOTER */
+
+footer{
+padding:30px 0;
+text-align:center;
+color:#6b7280;
+font-size:14px;
+}
+    
+.project:hover{
+transform:translateY(-5px);
+transition:0.3s;
+}
+
+.skill:hover{
+background:#1f2937;
+transition:0.3s;
+}
+
+</style>
+
 </head>
 
-<body id="background">
-    <div class="container">
-        <div class="navbar">
-            <div class="portfolio">
-                <div class="portword">
-                    <h1 id="port">Port</h1>
-                    <h1 id="folio">folio</h1>
-                </div>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="#about">Home</a></li>
-                    <li><a href="#aboutbox">About</a></li>
-                    <li><a href="#report">Modules</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="about">
-            <div class="info">
-                <p id="greet"></p>
-                <p id="hello">I am,</p><br>
-                <p>a second year b.e. student studying at shri sant gajanan maharaj college of engineering ,shegaon. <br>i
-                    am an artist who loves to draw ,sketch ,build and do many more artistic things. <br>currently i am
-                    studying electrical engineering so i joined fab-lab course cause of interest</p>
-            </div>
-          
-        </div>
-    </div>
-    <div id="aboutbox">
-        <div>
-            <div class="vedant_name">
-                <hr>
-                <p id="anived">Vedant Hiwale</p>
-            </div>
-            <h4>About</h4>
-            <ul class="vedant">
-                <div class="background_about_info">
-                    <hr>
-                    <p class="b_e_student">Current Course - bachelor of engineering</p>
-                    <br>
-                    <hr>
-                    <p class="b_e_student">Institution - shri sant gajanan maharaj college of engineering ,shegaon</p>
-                    <br>
-                    <hr>
-                    <p class="b_e_student">10th - Lions Dnyanpeeth ,Khamgaon</p>
-                    <br>
-                    <hr>
-                    <p class="b_e_student">12th - G.S. College ,Khamgaon</p>
-                </div>
-                <div class="branch_n">
-                    <h6>Electrical Engineer</h6>        
-                    <p>2S</p>
-                </div>
-            </ul>
-        </div>
-    </div>
-    <br><br><br>
-    <div id="report">
-        <h3>Modules</h3>
-        <div id="modules_selection">
-            <a title="Web Designing" href="./webdesign.html"><img src="./images_modules/web design.png" alt="module_1"></a>
-            <a title="Computer Aided Design" href="./CAD.html"><img src="./images_modules/computer aided.png" alt=""></a>
-            <a title="Computer Aided Cutting" href="./lascut.html"><img src="./images_modules/compter aided cutting m3.png" alt=""></a>
-            <a title="3D Printing" href="./construction.html"><img src="./images_modules/3d printing m4.png" alt=""></a>
-            <a title="PCB Making" href="./construction.html"><img src="./images_modules/pcb making m5.png" alt=""></a>
-            <a title="Embedded Programming" href="./construction.html"><img src="./images_modules/embedded programming m6.png" alt=""></a>
-            <a title="Interface and Applications" href="./construction.html"><img src="./images_modules/interface and applications m7.png" alt=""></a>
-            <a title="AI and ML" href="./construction.html"><img src="./images_modules/ai and ml m8.png" alt=""></a>
-        </div>
-    </div>
-    <div id="contact">
-        <h1>Contact</h1><br><br>
-        <div class="moreinfo">
-            <div class="linkedin">
-                <p>Connect with me on <br><a target="_blank"
-                        href="https://www.linkedin.com/in/vedant-hiwale-829127263?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEMF4HlSaTMul0BCe3ujeXQ%3D%3D">linkedin</a>
-                </p>
-            </div>
-            <div class="email">
-                <p>Write to me using <br><a target="_blank" href="mailto:vedanthiwale@gmail.com">E-mail</a></p>
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <div id="the_end">
-        <a target="_blank" href="https://github.com/waczimus/portfolio_site">&copy;https://github.com/waczimus</a>
-    </div>
-    <script>
-        d = new Date();
-        D = d.getHours();
-        if ((17 > D) && (12 <= D)) {
-            document.getElementById("greet").innerHTML = "good afternoon"
-        }
-        else if (D >= 17) {
-            document.getElementById("greet").innerHTML = "good evening"
-        }
-        else {
-            document.getElementById("greet").innerHTML = "good morning"
-        }
-        
-    </script>
-</body>
+<body>
 
+<div class="container">
+
+<nav>
+<h2>Vedant</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+
+<section class="hero">
+
+<h1>Vedant <span>Hiwale</span></h1>
+
+<p>
+Electrical engineering student interested in power systems, power electronics and embedded systems. 
+I enjoy building real-world engineering systems involving microcontrollers, control logic and energy systems.
+</p>
+
+<a class="btn" href="#projects">View Projects</a>
+
+</section>
+
+
+
+<section id="about">
+
+<h2>About</h2>
+
+<div class="about">
+
+<p>
+I am an electrical engineering student focused on practical engineering and real-world system design.
+My interests include power electronics, control systems, and microcontroller-based applications.
+</p>
+
+<p>
+I enjoy building systems that integrate hardware, communication protocols, and software to solve real engineering problems.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Power Systems</div>
+<div class="skill">Power Electronics</div>
+<div class="skill">Microcontrollers</div>
+<div class="skill">Embedded Systems</div>
+<div class="skill">Python</div>
+<div class="skill">Flask</div>
+<div class="skill">MQTT</div>
+<div class="skill">Circuit Design</div>
+
+</div>
+
+</section>
+
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>MQTT Communication System</h3>
+
+<p>
+ESP8266 system transmitting data from sensors to mobile and PC using MQTT topics for real-time monitoring.
+</p>
+
+<a href="https://github.com/vedanthiwale">View Project</a>
+
+</div>
+
+
+
+<div class="project">
+
+<h3>Fitness Tracker Web App</h3>
+
+<p>
+A Flask based web application that tracks workout sessions and stores user progress using SQLite.
+</p>
+
+<a href="https://github.com/vedanthiwale">View Project</a>
+
+</div>
+
+
+
+<div class="project">
+
+<h3>Solid State Transformer (Concept)</h3>
+
+<p>
+Research and design exploration of smart solid-state transformer architectures combining power electronics and control systems.
+</p>
+
+<a href="https://github.com/vedanthiwale">View Project</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p>Email: yourmail@email.com</p>
+
+<p>GitHub: github.com/vedanthiwale</p>
+
+<p>LinkedIn: linkedin.com/in/yourprofile</p>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>© 2026 Vedant Hiwale</p>
+
+</footer>
+
+</div>
+
+</body>
 </html>
